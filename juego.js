@@ -22,7 +22,16 @@ function agregarAmigo(){
 }
 
 //funcion para mostrar los amigos en la lista 
-function
+function actualizarListaVisual(){
+    const listaHTML=document.getElementById("listaAmigos");
+    listaHTML.innerHTML="";//limpiar lista antes de actualizar
+
+    listaDeAmigos.forEach((amigo) => {
+        const li =document.createElement("li");
+        li.textContent=amigo;
+        listaHTML.appendChild(li);
+    });
+}
 
 //funcion para sortear un amigo secreto
 
