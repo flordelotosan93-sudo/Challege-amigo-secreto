@@ -34,4 +34,18 @@ function actualizarListaVisual(){
 }
 
 //funcion para sortear un amigo secreto
+function sortearAmigoSecreto(){
+    const cantidad=listaDeAmigos.length;
+    const resultado=document.getElementById("resultado");
+
+    if(cantidad<2){
+        alert("Debe haber al menos 2 amigos para realizar el sorteo.");
+        return;
+    }
+
+    const indiceGanador=Math.floor(Math.random()*cantidad);
+    const nombreGanador=listaDeAmigos[indiceGanador];
+
+    resultado.textContent=`El amigo secreto es : ${nombreGanador}`;
+}
 
