@@ -3,7 +3,7 @@ let listaDeAmigos = [];//Array que guarda los nombres de los amigos
 //funcion para agregar un amigo
 function agregarAmigo(){
     const inputAmigo = document.getElementById("amigo");
-    const nombreAmigo = inputAmigo.ariaValueMax.trim ();
+    const nombreAmigo = inputAmigo.value.trim ();
     const sololetras=/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;//Expresion para validar letras 
 
     if(nombreAmigo===""){
