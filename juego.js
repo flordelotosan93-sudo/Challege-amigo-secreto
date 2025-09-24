@@ -49,3 +49,8 @@ function sortearAmigoSecreto(){
     resultado.textContent=`El amigo secreto es : ${nombreGanador}`;
 }
 
+//Funcion para limpiar el input
+function limpiarinput(){
+    document.querySelector("#amigo").value="";
+}
+
